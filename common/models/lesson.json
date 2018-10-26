@@ -1,0 +1,33 @@
+{
+  "name": "Lesson",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "titlr": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "string"
+    },
+    "videoURL": {
+      "type": "string"
+    },
+    "resources": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "section": {
+      "type": "belongsTo",
+      "model": "Section",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
